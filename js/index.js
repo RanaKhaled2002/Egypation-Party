@@ -15,8 +15,8 @@ let emailValidation = /^[a-zA-Z][a-zA-Z0-9]+\@[a-zA-Z0-9]+\.[a-zA-Z]{3,5}$/;
 let messageValidation = /^[a-zA-Z0-9]{3}/
 
 // show details
-$("h1").click(function(eInfo){
-    $("p").not($(eInfo.target).next()).slideUp(500);
+$("#details h1").click(function(eInfo){
+    $("#details p").not($(eInfo.target).next()).slideUp(500);
     $(eInfo.target).next().slideToggle(500);
 })
 
